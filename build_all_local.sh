@@ -2,11 +2,9 @@
 
 # --- ビルドパラメータ ---
 BOARD="seeeduino_xiao_ble"
-# リモートリポジトリを参照するようパスを変更
-ZMK_CONFIG_PATH="/workspaces/zmk/modules/config/zmk-config-roBa/config"
-ZMK_EXTRA_MODULES_PATH="/workspaces/zmk/modules/config/zmk-config-roBa"
-# 最終出力先は、ホストからアクセスしやすいように従来のパスを維持
-FINAL_OUTPUT_BASE_DIR="/workspaces/zmk-config/config/build"
+ZMK_CONFIG_PATH="/workspaces/zmk-config/config"
+ZMK_EXTRA_MODULES_PATH="/workspaces/zmk-config"
+FINAL_OUTPUT_BASE_DIR="/workspaces/zmk-config/config/build" # ホストOSの最終的な出力先
 TEMP_BUILD_ARTIFACTS_DIR="/tmp/zmk_build_artifacts_$(date +%s)" # 一時的なビルド成果物置き場 (実行毎にユニーク)
 
 # --- ログディレクトリ ---

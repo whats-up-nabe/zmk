@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
+    - name: whats-up-nabe
+      url-base: https://github.com/whats-up-nabe
   projects:
     - name: zephyr
       remote: zmkfirmware
@@ -43,5 +45,9 @@ manifest:
       remote: kumamuk-git
       revision: main
       path: modules/drivers/pmw3610
+    - name: zmk-config-roBa
+      remote: whats-up-nabe
+      revision: main
+      path: modules/config/zmk-config-roBa
   self:
     west-commands: scripts/west-commands.yml

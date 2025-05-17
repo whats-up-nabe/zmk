@@ -16,3 +16,6 @@ __pycache__
 
 # clangd
 app/.cache/
+
+# Build logs
+build_logs/
